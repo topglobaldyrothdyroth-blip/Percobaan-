@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prank Hacked</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        #message {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Sistem diretas! Tunggu sebentar...</div>
+
+    <script>
+        // Simulasi pesan hacked
+        setTimeout(() => {
+            document.getElementById('message').innerHTML = 'Hacked by Anonymous! Sistem crash dalam 10 detik...';
+        }, 2000);
+
+        // Crash simulasi: Freeze selama 10 detik dengan loop tak terbatas, lalu reload
+        setTimeout(() => {
+            // Loop tak terbatas untuk freeze
+            while (true) {
+                // Ini akan menyebabkan browser freeze selama beberapa detik
+            }
+        }, 5000); // Mulai freeze setelah 5 detik pesan
+
+        // Setelah 10 detik total, reload halaman
+        setTimeout(() => {
+            location.reload();
+        }, 10000);
+    </script>
+</body>
+</html>
